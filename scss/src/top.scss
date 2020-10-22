@@ -1,0 +1,121 @@
+@import "variables";
+
+#top {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+
+  background-color: #0a0a02;
+  background-image: url("/img/code.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  font-family: $commissioner-medium;
+  color: $text-color-white;
+  text-align: center;
+
+  .middle-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+
+    h1 {
+      font-size: 50px;
+    }
+
+    p {
+      font-size: 45px;
+
+      #i-am-a::after {
+        content: '|';
+        animation: 1s blink step-end infinite;
+      }
+    }
+  }
+
+  .bottom-text {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    right: 0;
+    opacity: .75;
+
+    font-size: 35px;
+    > * {
+      margin: 5px;
+    }
+  }
+}
+@keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: inherit;
+  }
+}
+
+@media only screen and (max-width: $device-xl) {
+  #top {
+    .middle-text {
+      h1 {
+        font-size: 40px;
+      }
+      p {
+        font-size: 35px;
+      }
+    }
+    .bottom-text {
+      font-size: 25px;
+    }
+  }
+}
+@media only screen and (max-width: $device-l) {
+  #top {
+    .middle-text {
+      h1 {
+        font-size: 35px;
+      }
+      p {
+        font-size: 30px;
+      }
+    }
+    .bottom-text {
+      font-size: 20px;
+    }
+  }
+}
+@media only screen and (max-width: $device-m) {
+  #top {
+    .middle-text {
+      h1 {
+        font-size: 30px;
+      }
+      p {
+        font-size: 25px;
+      }
+    }
+    .bottom-text {
+      font-size: 15px;
+    }
+  }
+}
+@media only screen and (max-width: $device-s) {
+  #top {
+    .middle-text {
+      h1 {
+        font-size: 25px;
+      }
+      p {
+        font-size: 20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,195 @@
+@import "variables";
+
+$timeline-line-width: 6px;
+$timeline-circle-radius: 15px;
+$timeline-line-padding: 15px;
+$timeline-margin: 50px;
+
+.timeline {
+  margin-bottom: 30px !important;
+
+  .line {
+    display: flex;
+    justify-content: center;
+    padding: $timeline-line-padding 0;
+
+    .left .title, .right .title {
+      font-family: $raleway-medium;
+      font-size: 25px;
+    }
+    .left .subtitle, .right .subtitle, .left .year {
+      font-family: $raleway-medium;
+      font-size: 20px;
+    }
+
+    .left, .right {
+      position: relative;
+      margin: 0 $timeline-margin;
+    }
+
+    .left {
+      text-align: right;
+      width: 250px;
+      margin-left: 0!important;
+      .year {
+        font-family: $raleway-light;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: -$timeline-line-padding*2;
+        right: -$timeline-margin - $timeline-line-width/2;
+        width: $timeline-line-width;
+        background: $accent-color;
+        opacity: .5;
+      }
+    }
+
+    &:last-child .left::after {
+      background: linear-gradient(135deg, $accent-color 50%, transparent 90%);
+    }
+
+    .right {
+      margin-right: 0!important;
+      width: 700px;
+      .subtitle, .text {
+        font-size: 15px;
+      }
+      .text {
+        font-family: $raleway-regular;
+      }
+      ul.text {
+        padding-left: 25px;
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -$timeline-margin - $timeline-circle-radius;
+        width: $timeline-circle-radius*2;
+        height: $timeline-circle-radius*2;
+        border-radius: $timeline-circle-radius;
+
+        background: $accent-color;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $device-xl) {
+  .timeline .line {
+    .left .title, .right .title {
+      font-size: 22px;
+    }
+    .left .subtitle, .right .subtitle, .left .year {
+      font-size: 18px;
+    }
+
+    .right {
+      width: 500px;
+
+      .subtitle, .text {
+        font-size: 15px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: $device-l) {
+  .timeline .line {
+    .left .title, .right .title {
+      font-size: 19px;
+    }
+    .left .subtitle, .right .subtitle, .left .year {
+      font-size: 17px;
+    }
+
+    .left, .right {
+      margin: 0 ($timeline-margin - 10px);
+    }
+
+    .left::after {
+      right: -($timeline-margin - 10px) - ($timeline-line-width - 1px)/2;
+      width: ($timeline-line-width - 1px);
+    }
+
+    .right {
+      width: 350px;
+
+      .subtitle, .text {
+        font-size: 15px;
+      }
+
+      &::before {
+        left: -($timeline-margin - 10px) - ($timeline-circle-radius - 5px);
+        width: ($timeline-circle-radius - 5px) * 2;
+        height: ($timeline-circle-radius - 5px) * 2;
+        border-radius: ($timeline-circle-radius - 5px);
+      }
+    }
+  }
+}
+@media only screen and (max-width: $device-m) {
+
+  .timeline .line {
+    .left .title, .right .title {
+      font-size: 17px;
+    }
+    .left .subtitle, .right .subtitle, .left .year {
+      font-size: 15px;
+    }
+
+    .right {
+      width: 300px;
+
+      .subtitle, .text {
+        font-size: 15px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: $device-s) {
+  .timeline .line {
+    flex-direction: column;
+    .left {
+      text-align: left;
+      margin-left: ($timeline-margin - 10px)!important;
+      margin-bottom: 10px;
+      &::after {
+        top: 10px;
+        right: calc(100% + #{($timeline-margin - 10px) - ($timeline-line-width - 1px)/2});
+        bottom: -10px;
+        background: $accent-color !important;
+      }
+      &::before {
+        content: '';
+        position: absolute;
+        top: 5px;
+        left: -($timeline-margin - 10px) - ($timeline-circle-radius - 5px);
+        width: ($timeline-circle-radius - 5px) * 2;
+        height: ($timeline-circle-radius - 5px) * 2;
+        border-radius: ($timeline-circle-radius - 5px);
+
+        background: $accent-color;
+      }
+    }
+    .right {
+      &::before {
+        top: 0;
+        left: -($timeline-margin - 10px) - ($timeline-line-width - 1px)/2;
+        width: ($timeline-line-width - 1px);
+        height: auto;
+        border-radius: 0;
+        bottom: -$timeline-line-padding*2 - 10px;
+        opacity: .5;
+      }
+    }
+
+    &:last-child .right::before {
+      bottom: -$timeline-line-padding*2;
+      background: linear-gradient(135deg, $accent-color 50%, transparent 90%);
+    }
+  }
+}

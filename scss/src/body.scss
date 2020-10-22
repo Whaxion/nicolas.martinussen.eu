@@ -1,0 +1,39 @@
+@import "variables";
+
+#body {
+  background: $background-color1;
+  background: $background-gradient;
+
+  padding: 25px;
+
+  > * {
+    margin: 10px;
+  }
+
+  h2 {
+    font-family: $commissioner-medium;
+    font-size: 35px;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: $device-xl) {
+  #body {
+    h2 {
+      font-size: 30px;
+    }
+  }
+}
+@media only screen and (max-width: $device-l) {
+  #body {
+    h2 {
+      font-size: 25px;
+    }
+  }
+}
+@media only screen and (max-width: $device-m) {
+  #body {
+    h2 {
+      font-size: 20px;
+    }
+  }
+}
