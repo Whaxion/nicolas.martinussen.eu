@@ -1,19 +1,24 @@
 @charset "UTF-8";
 @font-face {
-  font-family: Raleway-Light;
-  src: url("/fonts/Raleway-Light.ttf"); }
+  font-family: Raleway;
+  src: url("/fonts/Raleway-Light.ttf");
+  font-weight: 400; }
 @font-face {
-  font-family: Raleway-Regular;
-  src: url("/fonts/Raleway-Regular.ttf"); }
+  font-family: Raleway;
+  src: url("/fonts/Raleway-Regular.ttf");
+  font-weight: 500; }
 @font-face {
-  font-family: Raleway-Medium;
-  src: url("/fonts/Raleway-Medium.ttf"); }
+  font-family: Raleway;
+  src: url("/fonts/Raleway-Medium.ttf");
+  font-weight: 600; }
 @font-face {
-  font-family: Commissioner-Regular;
-  src: url("/fonts/Commissioner-Regular.ttf"); }
+  font-family: Commissioner;
+  src: url("/fonts/Commissioner-Regular.ttf");
+  font-weight: 500; }
 @font-face {
-  font-family: Commissioner-Medium;
-  src: url("/fonts/Commissioner-Medium.ttf"); }
+  font-family: Commissioner;
+  src: url("/fonts/Commissioner-Medium.ttf");
+  font-weight: 600; }
 @font-face {
   font-family: "icons";
   src: url("/fonts/icons.ttf?fpqo74") format("truetype"), url("/fonts/icons.woff?fpqo74") format("woff"), url("/fonts/icons.svg?fpqo74#icons") format("svg");
@@ -3068,7 +3073,20 @@ html {
 
 body {
   min-height: 100%;
-  font-family: Raleway-Light, Raleway-Regular, Raleway-Medium, sans-serif; }
+  font-family: Raleway, sans-serif;
+  font-weight: 400;
+  font-size: 20px; }
+
+.text-center {
+  text-align: center; }
+
+b {
+  font-weight: 600; }
+
+a {
+  color: #000000dd; }
+  a:hover {
+    text-shadow: 1px 1px 2px #00000018; }
 
 #top {
   position: relative;
@@ -3079,7 +3097,8 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  font-family: Commissioner-Medium, Commissioner-Regular, sans-serif;
+  font-family: Commissioner, sans-serif;
+  font-weight: 600;
   color: #ffffffdd;
   text-align: center; }
   #top .middle-text {
@@ -3146,7 +3165,8 @@ body {
   #body > * {
     margin: 10px; }
   #body h2 {
-    font-family: Commissioner-Medium, Commissioner-Regular, sans-serif;
+    font-family: Commissioner, sans-serif;
+    font-weight: 600;
     font-size: 35px;
     text-align: center; }
 
@@ -3166,10 +3186,10 @@ body {
     justify-content: center;
     padding: 15px 0; }
     .timeline .line .left .title, .timeline .line .right .title {
-      font-family: Raleway-Medium, Raleway-Regular, Raleway-Light, sans-serif;
+      font-weight: 600;
       font-size: 25px; }
     .timeline .line .left .subtitle, .timeline .line .right .subtitle, .timeline .line .left .year {
-      font-family: Raleway-Medium, Raleway-Regular, Raleway-Light, sans-serif;
+      font-weight: 600;
       font-size: 20px; }
     .timeline .line .left, .timeline .line .right {
       position: relative;
@@ -3178,8 +3198,6 @@ body {
       text-align: right;
       width: 250px;
       margin-left: 0 !important; }
-      .timeline .line .left .year {
-        font-family: Raleway-Light, Raleway-Regular, Raleway-Medium, sans-serif; }
       .timeline .line .left::after {
         content: '';
         position: absolute;
@@ -3197,7 +3215,7 @@ body {
       .timeline .line .right .subtitle, .timeline .line .right .text {
         font-size: 15px; }
       .timeline .line .right .text {
-        font-family: Raleway-Regular, Raleway-Medium, Raleway-Light, sans-serif; }
+        font-weight: 500; }
       .timeline .line .right ul.text {
         padding-left: 25px; }
       .timeline .line .right::before {
@@ -3279,3 +3297,53 @@ body {
     .timeline .line:last-child .right::before {
       bottom: -30px;
       background: linear-gradient(135deg, #5e4ae3 50%, transparent 90%); } }
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .skills .skill {
+    display: flex;
+    width: 400px;
+    margin: 20px 0; }
+    .skills .skill .dots {
+      display: flex;
+      margin-right: 25px; }
+      .skills .skill .dots > div {
+        width: 30px;
+        height: 30px;
+        border-radius: 15px;
+        background: #5e4ae3;
+        opacity: 0.35;
+        margin: 0 5px; }
+        .skills .skill .dots > div.active {
+          opacity: 1; }
+    .skills .skill .text a {
+      text-decoration: none; }
+    .skills .skill .text .title {
+      font-weight: 600;
+      font-size: 25px; }
+    .skills .skill .text .year {
+      font-weight: 600;
+      font-size: 20px; }
+
+@media only screen and (max-width: 1200px) {
+  .skills .skill .text .title {
+    font-size: 22px; }
+  .skills .skill .text .year {
+    font-size: 18px; } }
+@media only screen and (max-width: 992px) {
+  .skills .skill {
+    margin: 10px 0; }
+    .skills .skill .dots > div {
+      width: 20px;
+      height: 20px;
+      border-radius: 10px; }
+    .skills .skill .text .title {
+      font-size: 19px; }
+    .skills .skill .text .year {
+      font-size: 17px; } }
+@media only screen and (max-width: 768px) {
+  .skills .skill .text .title {
+    font-size: 17px; }
+  .skills .skill .text .year {
+    font-size: 15px; } }

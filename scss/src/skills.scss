@@ -1,0 +1,83 @@
+@import "variables";
+$skills-circle-radius: 15px;
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .skill {
+    display: flex;
+    width: 400px;
+    margin: 20px 0;
+
+    .dots {
+      display: flex;
+      margin-right: 25px;
+      & > div {
+        width: $skills-circle-radius * 2;
+        height: $skills-circle-radius * 2;
+        border-radius: $skills-circle-radius;
+        background: $accent-color;
+        opacity: 0.35;
+        margin: 0 5px;
+
+        &.active {
+          opacity: 1;
+        }
+      }
+    }
+    .text {
+      a {
+        text-decoration: none;
+      }
+      .title {
+        font-weight: 600;
+        font-size: 25px;
+      }
+      .year {
+        font-weight: 600;
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $device-xl) {
+  .skills .skill {
+    .text .title {
+      font-size: 22px;
+    }
+    .text .year {
+      font-size: 18px;
+    }
+  }
+}
+
+@media only screen and (max-width: $device-l) {
+  .skills .skill {
+    margin: 10px 0;
+    .dots > div {
+      width: ($skills-circle-radius - 5px) * 2;
+      height: ($skills-circle-radius - 5px) * 2;
+      border-radius: ($skills-circle-radius - 5px);
+    }
+    .text .title {
+      font-size: 19px;
+    }
+    .text .year {
+      font-size: 17px;
+    }
+  }
+}
+
+@media only screen and (max-width: $device-m) {
+  .skills .skill {
+    .text .title {
+      font-size: 17px;
+    }
+    .text .year {
+      font-size: 15px;
+    }
+  }
+}

@@ -18,5 +18,20 @@ html {
 
 body {
   min-height: 100%;
-  font-family: $raleway-light;
+  font-family: $raleway;
+  font-weight: 400;
+  font-size: 20px;
+}
+.text-center {
+  text-align: center;
+}
+b {
+  font-weight: 600;
+}
+a {
+  color: $text-color;
+
+  &:hover {
+    text-shadow: 1px 1px 2px #00000018;
+  }
 }

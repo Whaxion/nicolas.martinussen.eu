@@ -14,11 +14,11 @@ $timeline-margin: 50px;
     padding: $timeline-line-padding 0;
 
     .left .title, .right .title {
-      font-family: $raleway-medium;
+      font-weight: 600;
       font-size: 25px;
     }
     .left .subtitle, .right .subtitle, .left .year {
-      font-family: $raleway-medium;
+      font-weight: 600;
       font-size: 20px;
     }
 
@@ -31,9 +31,6 @@ $timeline-margin: 50px;
       text-align: right;
       width: 250px;
       margin-left: 0!important;
-      .year {
-        font-family: $raleway-light;
-      }
 
       &::after {
         content: '';
@@ -58,7 +55,7 @@ $timeline-margin: 50px;
         font-size: 15px;
       }
       .text {
-        font-family: $raleway-regular;
+        font-weight: 500;
       }
       ul.text {
         padding-left: 25px;
