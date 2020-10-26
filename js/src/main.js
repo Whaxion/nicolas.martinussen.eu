@@ -1,8 +1,8 @@
 import {randomNumber} from "./utils";
 
 let texts = [
-    "étudiant en informatique",
-    "développeur web"
+    "étudiant en informatique.",
+    "développeur web."
 ];
 let currentText = "";
 let currentPos = 0;

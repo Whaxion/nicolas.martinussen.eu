@@ -1,8 +1,8 @@
 (function(){'use strict';function randomNumber(min, max) {
     return Math.random() * (max - min) + min;
 }let texts = [
-    "étudiant en informatique",
-    "développeur web"
+    "étudiant en informatique.",
+    "développeur web."
 ];
 let currentText = "";
 let currentPos = 0;
