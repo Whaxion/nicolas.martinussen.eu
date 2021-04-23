@@ -1,4 +1,5 @@
 .SILENT:
+.PHONY: scss rollup server-static
 
 FILES = src/nicolas_dot_martinussen_dot_eu.cr src/index.ecr src/language-chooser.ecr
 
