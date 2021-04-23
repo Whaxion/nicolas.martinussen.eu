@@ -8,3 +8,4 @@ services:
       dockerfile: Dockerfile
     image: nicolas.martinussen.eu:latest
     container_name: "nicolas.martinussen.eu"
+    restart: unless-stopped
