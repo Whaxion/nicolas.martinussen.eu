@@ -1,9 +1,5 @@
 import {randomNumber} from "./utils";
 
-let texts = [
-    "étudiant en informatique.",
-    "développeur web."
-];
 let currentText = "";
 let currentPos = 0;
 
@@ -12,14 +8,14 @@ function main() {
 }
 
 function writeText(){
-    let iAmA = document.getElementById("i-am-a");
+    let textWriting = document.getElementById("text-writing");
     if(!currentText || currentText.length <= 0){
         if(++currentPos >= texts.length){
             currentPos = 0;
         }
         currentText = texts[currentPos];
     }
-    iAmA.innerText += currentText.charAt(0);
+    textWriting.innerText += currentText.charAt(0);
     currentText = currentText.slice(1);
     if(currentText.length <= 0){
         setTimeout(eraseText, randomNumber(2000, 3500));
@@ -29,12 +25,16 @@ function writeText(){
 }
 
 function eraseText(){
-    let iAmA = document.getElementById("i-am-a");
-    if(iAmA.innerText.length > 0){
-        iAmA.innerText = iAmA.innerText.slice(0, -1);
+    let textWriting = document.getElementById("text-writing");
+    if(textWriting.innerText.length > 0){
+        textWriting.innerText = textWriting.innerText.slice(0, -1);
         setTimeout(eraseText, randomNumber(50, 100));
     } else {
-        setTimeout(writeText, randomNumber(1000, 1500));
+        let time = timeBeforeWriting;
+        if(time == -1){
+            time = randomNumber(1000, 1500);
+        }
+        setTimeout(writeText, time);
     }
 }
 

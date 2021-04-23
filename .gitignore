@@ -1,2 +1,9 @@
-.idea/
+/docs/
+/lib/
+/bin/
+/.shards/
+*.dwarf
 .sass-cache/
+/public/css
+/public/js
+server

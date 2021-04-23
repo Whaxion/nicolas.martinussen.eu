@@ -35,3 +35,17 @@ a {
     text-shadow: 1px 1px 2px #00000018;
   }
 }
+
+.button {
+  display: flex;
+  align-items: center;
+  background: $background-color2;
+  border-radius: 50vh;
+  margin: 15px;
+  text-decoration: none;
+  padding: 10px;
+  &:hover {
+    text-shadow: none;
+    background: $background-color1;
+  }
+}

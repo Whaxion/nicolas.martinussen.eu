@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="<%= I18n.locale %>">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="/css/style.min.css?zetgvbs">
+
+    <title>Nicolas Martinussen</title>
+</head>
+<body>
+<div id="top">
+    <a href="/" id="current-language" class="button"><span class="icon-earth"></span><span><%= I18n.translate "top.language" %></span></a>
+    <div class="middle-text">
+        <h1><%= I18n.translate "top.hello" %></h1>
+        <p><%= I18n.translate "top.im-a" %><span id="text-writing"><%= I18n.translate "top.im-a-1" %></span></p>
+    </div>
+    <div class="bottom-text">
+        <p><%= I18n.translate "top.know-more" %></p>
+        <span class="icon-chevron-down"></span>
+    </div>
+</div>
+<div id="body">
+    <h2 id="cursus"><%= I18n.translate "body.my-cursus" %></h2>
+    <div class="timeline">
+        <div class="line">
+            <div class="left">
+                <p class="title">HEPL Seraing</p>
+                <p class="subtitle">(INPRES)</p>
+                <p class="year">2019 - <%= I18n.translate "other.today" %></p>
+            </div>
+            <div class="right">
+                <p class="title"><%= I18n.translate "body.cursus.hepl.title" %></p>
+                <p class="subtitle"><%= I18n.translate "body.cursus.hepl.subtitle" %></p>
+            </div>
+        </div>
+        <div class="line">
+            <div class="left">
+                <p class="title">Athénée Royal</p>
+                <p class="subtitle">de Visé</p>
+                <p class="year">2014 - 2019</p>
+            </div>
+            <div class="right">
+                <p class="title"><%= I18n.translate "body.cursus.arv.title" %></p>
+                <p class="subtitle"><%= I18n.translate "body.cursus.arv.subtitle" %></p>
+                <ul class="text">
+                    <li><%= I18n.translate "body.cursus.arv.text.1" %></li>
+                    <li><%= I18n.translate "body.cursus.arv.text.2" %></li>
+                </ul>
+            </div>
+        </div>
+        <div class="line">
+            <div class="left">
+                <p class="title">Collège St-Hadelin</p>
+                <p class="subtitle">Visé</p>
+                <p class="year">2012 - 2014</p>
+            </div>
+            <div class="right">
+                <p class="title"><%= I18n.translate "body.cursus.csh.title" %></p>
+                <p class="subtitle"><%= I18n.translate "body.cursus.csh.subtitle" %></p>
+            </div>
+        </div>
+    </div>
+
+    <h2 id="experience"><%= I18n.translate "body.my-pro-experiences" %></h2>
+    <div class="timeline">
+        <div class="line">
+            <div class="left">
+                <p class="title"><%= I18n.translate "body.pro-experiences.1.left.title" %></p>
+                <p class="subtitle"><%= I18n.translate "body.pro-experiences.1.left.subtitle" %></p>
+                <p class="year"><%= I18n.translate "body.pro-experiences.1.left.year" %></p>
+            </div>
+            <div class="right">
+                <p class="title"><%= I18n.translate "body.pro-experiences.1.right.title" %></p>
+                <p class="subtitle"><%= I18n.translate "body.pro-experiences.1.right.subtitle" %></p>
+                <ul class="text">
+                    <li><%= I18n.translate "body.pro-experiences.1.right.text.1" %></li>
+                    <li><%= I18n.translate "body.pro-experiences.1.right.text.2" %></li>
+                    <li><%= I18n.translate "body.pro-experiences.1.right.text.3" %></li>
+                    <li><%= I18n.translate "body.pro-experiences.1.right.text.4" %></li>
+                </ul>
+            </div>
+        </div>
+        <div class="line">
+            <div class="left">
+                <p class="title"><%= I18n.translate "body.pro-experiences.2.left.title" %></p>
+                <p class="subtitle"><%= I18n.translate "body.pro-experiences.2.left.subtitle" %></p>
+                <p class="year"><%= I18n.translate "body.pro-experiences.2.left.year" %></p>
+            </div>
+            <div class="right">
+                <p class="title"><%= I18n.translate "body.pro-experiences.2.right.title" %></p>
+                <p class="subtitle"><%= I18n.translate "body.pro-experiences.2.right.subtitle" %></p>
+                <ul class="text">
+                    <li><%= I18n.translate "body.pro-experiences.2.right.text.1" %></li>
+                    <li><%= I18n.translate "body.pro-experiences.2.right.text.2" %></li>
+                    <li><%= I18n.translate "body.pro-experiences.2.right.text.3" %></li>
+                    <li><%= I18n.translate "body.pro-experiences.2.right.text.4" %></li>
+                </ul>
+            </div>
+        </div>
+        <div class="line">
+            <div class="left">
+                <p class="title"><%= I18n.translate "body.pro-experiences.3.left.title" %></p>
+                <p class="subtitle"><%= I18n.translate "body.pro-experiences.3.left.subtitle" %></p>
+                <p class="year"><%= I18n.translate "body.pro-experiences.3.left.year" %></p>
+            </div>
+            <div class="right">
+                <p class="title"><%= I18n.translate "body.pro-experiences.3.right.title" %></p>
+                <p class="subtitle"><%= I18n.translate "body.pro-experiences.3.right.subtitle" %></p>
+            </div>
+        </div>
+    </div>
+
+    <h2 id="skills"><%= I18n.translate "body.my-skills" %></h2>
+    <div class="skills">
+        <div class="skill">
+            <div class="dots">
+                <div class="active"></div>
+                <div class="active"></div>
+                <div class="active"></div>
+                <div class="active"></div>
+                <div></div>
+            </div>
+            <div class="text">
+                <p class="title">HTML/CSS</p>
+                <p class="year">6-7 <%= I18n.translate "other.years" %></p>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="dots">
+                <div class="active"></div>
+                <div class="active"></div>
+                <div class="active"></div>
+                <div class="active"></div>
+                <div></div>
+            </div>
+            <div class="text">
+                <p class="title"><%= I18n.translate "body.skills.linux" %></p>
+                <p class="year">5 <%= I18n.translate "other.years" %></p>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="dots">
+                <div class="active"></div>
+                <div class="active"></div>
+                <div class="active"></div>
+                <div class="active"></div>
+                <div></div>
+            </div>
+            <div class="text">
+                <p class="title"><a href="https://crystal-lang.org/" target="_blank">Crystal</a></p>
+                <p class="year">3 <%= I18n.translate "other.years" %></p>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="dots">
+                <div class="active"></div>
+                <div class="active"></div>
+                <div class="active"></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="text">
+                <p class="title"><a href="https://www.php.net/" target="_blank">PHP</a></p>
+                <p class="year">3 <%= I18n.translate "other.years" %></p>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="dots">
+                <div class="active"></div>
+                <div class="active"></div>
+                <div class="active"></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="text">
+                <p class="title"><a href="https://kotlinlang.org/" target="_blank">Kotlin</a></p>
+                <p class="year">2 <%= I18n.translate "other.years" %></p>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="dots">
+                <div class="active"></div>
+                <div class="active"></div>
+                <div class="active"></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="text">
+                <p class="title">Javascript</p>
+                <p class="year">1.5 <%= I18n.translate "other.years" %></p>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="dots">
+                <div class="active"></div>
+                <div class="active"></div>
+                <div class="active"></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="text">
+                <p class="title">C/C++</p>
+                <p class="year">1.5 <%= I18n.translate "other.years-school" %></p>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="dots">
+                <div class="active"></div>
+                <div class="active"></div>
+                <div class="active"></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="text">
+                <p class="title"><a href="https://www.ruby-lang.org/en/" target="_blank">Ruby</a></p>
+                <p class="year">1 <%= I18n.translate "other.year" %></p>
+            </div>
+        </div>
+    </div>
+    <h2 id="contact"><%= I18n.translate "body.contact-me" %></h2>
+    <p class="text-center"><b><%= I18n.translate "body.contact.by-mail" %>:</b> <a href="mailto:nicolas@martinussen.eu">nicolas@martinussen.eu</a></p>
+</div>
+<script type="application/javascript">
+    let texts = [
+        "<%= I18n.translate "top.im-a-1" %>",
+        "<%= I18n.translate "top.im-a-2" %>"
+    ];
+
+    let timeBeforeWriting = -1;
+</script>
+<script type="application/javascript" src="/js/bundle.js?zetgvbs"></script>
+</body>
+</html>

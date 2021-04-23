@@ -33,11 +33,30 @@
 
     p {
       font-size: 45px;
+    }
 
-      #i-am-a::after {
-        content: '|';
-        animation: 1s blink step-end infinite;
+    ul.languages {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin: 15px;
+
+      li {
+        font-size: 30px;
+        span {
+          margin: 0 10px;
+        }
+        .flag-icon {
+          width: 40px;
+          height: 40px;
+          margin-left: 0;
+        }
       }
+    }
+
+    #text-writing::after {
+      content: '|';
+      animation: 1s blink step-end infinite;
     }
   }
 
@@ -53,6 +72,22 @@
       margin: 5px;
     }
   }
+
+  #current-language {
+    z-index: 1;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+
+    span {
+      margin: 0 5px;
+    }
+
+    .icon-earth {
+      font-size: 35px;
+    }
+  }
+
 }
 @keyframes blink {
   from, to {
@@ -87,9 +122,33 @@
       p {
         font-size: 30px;
       }
+      
+      ul.languages li {
+        span {
+          margin: 0 10px;
+        }
+        .flag-icon {
+          width: 30px;
+          height: 30px;
+        }
+      }
     }
     .bottom-text {
       font-size: 20px;
+    }
+
+    .button {
+      font-size: 18px;
+    }
+
+    #current-language {
+      top: 10px;
+      right: 10px;
+      font-size: 18px;
+      
+      .icon-earth {
+        font-size: 30px;
+      }
     }
   }
 }
@@ -103,6 +162,7 @@
         font-size: 25px;
       }
     }
+
     .bottom-text {
       font-size: 15px;
     }
@@ -115,6 +175,24 @@
         font-size: 25px;
       }
       p {
+        font-size: 20px;
+      }
+
+      ul.languages li .flag-icon {
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    .button {
+      font-size: 15px;
+    }
+
+    #current-language {
+      top: 5px;
+      right: 5px;
+      
+      .icon-earth {
         font-size: 20px;
       }
     }

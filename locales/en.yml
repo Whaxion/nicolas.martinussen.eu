@@ -1,0 +1,73 @@
+top:
+  language: "Language"
+  hello: "Hello, I'm Nicolas Martinussen."
+  im-a: "I'm a "
+  im-a-1: "student in computer science."
+  im-a-2: "web developer."
+  know-more: "Find out more about me"
+body:
+  my-cursus: "My school curriculum"
+  cursus:
+    hepl:
+      title: "Computer science and systems"
+      subtitle: "Network and Telecom"
+    arv:
+      title: "General education"
+      subtitle: "Sciences 7, Mathematics 8"
+      text:
+        1: "Laureate of the 2018 Chemistry Olympiad"
+        2: "Laureate of the 2019 Chemistry Olympiad"
+    csh:
+      title: "General education"
+      subtitle: "Latin, Dutch"
+  
+  my-pro-experiences: "My professional experiences"
+  pro-experiences:
+    1:
+      left:
+        title: "Mineskill.fr"
+        subtitle: "Lille"
+        year: "18-19 May 2019"
+      right:
+        title: "Geek-Days Lille 2019"
+        subtitle: "Animation of a 60m² surface"
+        text:
+          1: "Management of the surface and its animations"
+          2: "Contact with the public"
+          3: "Management of a sales point"
+          4: "Development of a mini-game on Minecraft"
+    2:
+      left:
+        title: "Mineskill.fr"
+        subtitle: "Lille"
+        year: "26-27 May 2018"
+      right:
+        title: "Geek-Days Lille 2018"
+        subtitle: "Animation of a 36m² surface"
+        text:
+          1: "Supervision of animations"
+          2: "Visitor flow management"
+          3: "Tasks related to the proper maintenance of the surface (preparations, setups)"
+          4: "Development of a mini-game on Minecraft"
+    3:
+      left:
+        title: "Le 1930"
+        subtitle: "Visé"
+        year: "2017 - Today"
+      right:
+        title: "Student job"
+        subtitle: "Cooking, Dishwashing"
+  
+  my-skills: "My skills"
+  skills:
+    linux: "Linux administration"
+  
+  contact-me: "Contact me"
+  contact:
+    by-mail: "By mail"
+
+other:
+  today: "Today"
+  years: "years"
+  years-school: "years (school)"
+  year: "year"

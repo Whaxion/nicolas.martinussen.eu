@@ -1,0 +1,73 @@
+top:
+  language: "Langue"
+  hello: "Bonjour, je suis Nicolas Martinussen."
+  im-a: "Je suis un "
+  im-a-1: "étudiant en informatique."
+  im-a-2: "développeur web."
+  know-more: "En savoir plus sur moi"
+body:
+  my-cursus: "Mon cursus scolaire"
+  cursus:
+    hepl:
+      title: "Informatique et systèmes"
+      subtitle: "Orientation Réseau et Télécom"
+    arv:
+      title: "Enseignement général"
+      subtitle: "Sciences 7, Mathématiques 8"
+      text:
+        1: "Lauréat des olympiades de chimie en 2018"
+        2: "Lauréat des olympiades de chimie en 2019"
+    csh:
+      title: "Enseignement général"
+      subtitle: "Latin, Néérlandais"
+  
+  my-pro-experiences: "Mes expériences professionnelles"
+  pro-experiences:
+    1:
+      left:
+        title: "Mineskill.fr"
+        subtitle: "Lille"
+        year: "18-19 mai 2019"
+      right:
+        title: "Geek-Days Lille 2019"
+        subtitle: "Animation d'une surface de 60m²"
+        text:
+          1: "Gestion de la surface et de ses animations"
+          2: "Contact avec le grand public"
+          3: "Gestion d'un point de vente"
+          4: "Développement d'un mini-jeu sur Minecraft"
+    2:
+      left:
+        title: "Mineskill.fr"
+        subtitle: "Lille"
+        year: "26-27 mai 2018"
+      right:
+        title: "Geek-Days Lille 2018"
+        subtitle: "Animation d'une surface de 36m²"
+        text:
+          1: "Supervision des animations"
+          2: "Gestion du flux de visiteurs"
+          3: "Tâches liées au bon maintien de la surface (préparations, mises en place)"
+          4: "Développement d'un mini-jeu sur Minecraft"
+    3:
+      left:
+        title: "Le 1930"
+        subtitle: "Visé"
+        year: "2017 - Aujourd'hui"
+      right:
+        title: "Job étudiant"
+        subtitle: "Cuisine, Plonge"
+  
+  my-skills: "Mes compétences"
+  skills:
+    linux: "Administration Linux"
+  
+  contact-me: "Me contacter"
+  contact:
+    by-mail: "Par mail"
+
+other:
+  today: "Aujourd'hui"
+  years: "années"
+  years-school: "années (école)"
+  year: "année"

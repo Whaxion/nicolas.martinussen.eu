@@ -1,0 +1,19 @@
+name: nicolas_dot_martinussen_dot_eu
+version: 0.1.0
+
+authors:
+  - Nicolas Martinussen <me@whaxion.be>
+
+targets:
+  nicolas_dot_martinussen_dot_eu:
+    main: src/nicolas_dot_martinussen_dot_eu.cr
+
+dependencies:
+  kemal:
+    github: kemalcr/kemal
+  i18n:
+    github: TechMagister/i18n.cr
+
+crystal: 1.0.0
+
+license: MIT
