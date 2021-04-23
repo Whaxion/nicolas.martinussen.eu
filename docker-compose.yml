@@ -1,0 +1,10 @@
+version: '3.2'
+services:
+  nicolas.martinussen.eu:
+    ports:
+      - "127.0.0.1:3000:3000"
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: nicolas.martinussen.eu:latest
+    container_name: "nicolas.martinussen.eu"
