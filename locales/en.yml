@@ -71,3 +71,8 @@ other:
   years: "years"
   years-school: "years (school)"
   year: "year"
+
+site:
+  title: "Nicolas Martinussen - Student in Computer Science and Web Developer"
+  description: "Hello, I'm Nicolas Martinussen. I'm a Student in Computer Science and a Web Developer. And this is my Curriculum Vitae."
+  image: "https://nicolas.martinussen.eu/img/screenshot-en.png"

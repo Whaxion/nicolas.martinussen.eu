@@ -8,6 +8,7 @@ module Nicolas::Martinussen::EU
   I18n.init
 
   get "/" do
+    I18n.locale = "en"
     render "src/language-chooser.ecr"
   end
 

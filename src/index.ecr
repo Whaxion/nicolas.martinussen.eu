@@ -5,7 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="/css/style.min.css?zetgvbs">
 
-    <title>Nicolas Martinussen</title>
+    <title><%= I18n.translate "site.title" %></title>
+
+    <meta name="description" content="<%= I18n.translate "site.description" %>">
+    <meta name=”robots” content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nicolas.martinussen.eu/">
+    <meta property="og:title" content="<%= I18n.translate "site.title" %>">
+    <meta property="og:description" content="<%= I18n.translate "site.description" %>">
+    <meta property="og:image" content="<%= I18n.translate "site.image" %>">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://nicolas.martinussen.eu/">
+    <meta property="twitter:title" content="<%= I18n.translate "site.title" %>">
+    <meta property="twitter:description" content="<%= I18n.translate "site.description" %>">
+    <meta property="twitter:image" content="<%= I18n.translate "site.image" %>">
 </head>
 <body>
 <div id="top">
