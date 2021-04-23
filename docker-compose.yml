@@ -3,6 +3,8 @@ services:
   nicolas.martinussen.eu:
     ports:
       - "127.0.0.1:3000:3000"
+    logging:
+      driver: none
     build:
       context: ./
       dockerfile: Dockerfile
