@@ -19,9 +19,9 @@ module Nicolas::Martinussen::EU
   lastmod_french = File.info("./locales/fr.yml").modification_time
 
   sitemaps = Sitemapper.build do
-    add("/", priority: 0.1, lastmod: (lastmod_language_chooser > lastmod_english) ? lastmod_language_chooser : lastmod_english)
-    add("/en", priority: 0.9, lastmod: (lastmod_index > lastmod_english) ? lastmod_index : lastmod_english)
-    add("/fr", priority: 0.9, lastmod: (lastmod_index > lastmod_french) ? lastmod_index : lastmod_french)
+    add("/", changefreq: "monthly", priority: 0.1, lastmod: (lastmod_language_chooser > lastmod_english) ? lastmod_language_chooser : lastmod_english)
+    add("/en", changefreq: "monthly", priority: 0.9, lastmod: (lastmod_index > lastmod_english) ? lastmod_index : lastmod_english)
+    add("/fr", changefreq: "monthly", priority: 0.9, lastmod: (lastmod_index > lastmod_french) ? lastmod_index : lastmod_french)
   end
 
   Sitemapper.store(sitemaps, "./public/")
