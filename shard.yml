@@ -13,6 +13,8 @@ dependencies:
     github: kemalcr/kemal
   i18n:
     github: TechMagister/i18n.cr
+  sitemapper:
+    github: jwoertink/sitemapper
 
 crystal: 1.0.0
 

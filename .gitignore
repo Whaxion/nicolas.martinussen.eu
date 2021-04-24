@@ -6,4 +6,5 @@
 .sass-cache/
 /public/css
 /public/js
+/public/sitemap.xml
 server

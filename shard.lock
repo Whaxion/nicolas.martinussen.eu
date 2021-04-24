@@ -1,5 +1,13 @@
 version: 2.0
 shards:
+  awscr-s3:
+    git: https://github.com/taylorfinnell/awscr-s3.git
+    version: 0.8.2
+
+  awscr-signer:
+    git: https://github.com/taylorfinnell/awscr-signer.git
+    version: 0.8.2
+
   exception_page:
     git: https://github.com/crystal-loot/exception_page.git
     version: 0.1.5
@@ -19,4 +27,8 @@ shards:
   radix:
     git: https://github.com/luislavena/radix.git
     version: 0.4.1
+
+  sitemapper:
+    git: https://github.com/jwoertink/sitemapper.git
+    version: 0.7.1
 
