@@ -9,6 +9,8 @@ targets:
     main: src/nicolas_dot_martinussen_dot_eu.cr
 
 dependencies:
+  http_accept:
+    github: BecauseOfProg/http_accept
   kemal:
     github: kemalcr/kemal
   i18n:

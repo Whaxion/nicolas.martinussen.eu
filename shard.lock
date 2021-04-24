@@ -12,6 +12,10 @@ shards:
     git: https://github.com/crystal-loot/exception_page.git
     version: 0.1.5
 
+  http_accept:
+    git: https://github.com/becauseofprog/http_accept.git
+    version: 0.1.0
+
   i18n:
     git: https://github.com/techmagister/i18n.cr.git
     version: 0.3.1

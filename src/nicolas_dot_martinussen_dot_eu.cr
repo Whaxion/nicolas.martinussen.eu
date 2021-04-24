@@ -1,3 +1,4 @@
+require "http_accept"
 require "kemal"
 require "i18n"
 require "sitemapper"
@@ -26,9 +27,21 @@ module Nicolas::Martinussen::EU
 
   Sitemapper.store(sitemaps, "./public/")
 
-  get "/" do
+  get "/" do |env|
+    wanted_languages : Array(HTTP::Accept::Language::Value)? = nil
+    if env.request.headers["Accept-Language"]?
+      wanted_languages = HTTP::Accept::Language.parse(env.request.headers["Accept-Language"])
+    end
+    puts wanted_languages.inspect
+    case HTTP::Accept::Language.best_locale(["en", "fr"], wanted_languages)
+    when "fr"
+      env.redirect "/fr"
+    else
+      env.redirect "/en"
+    end
+    
     I18n.locale = "en"
-    render "src/language-chooser.ecr"
+    render "src/index.ecr"
   end
 
   get "/en" do
@@ -39,6 +52,20 @@ module Nicolas::Martinussen::EU
   get "/fr" do
     I18n.locale = "fr"
     render "src/index.ecr"
+  end
+
+  get "/language-chooser" do |env|
+    wanted_languages : Array(HTTP::Accept::Language::Value)? = nil
+    if env.request.headers["Accept-Language"]?
+      wanted_languages = HTTP::Accept::Language.parse(env.request.headers["Accept-Language"])
+    end
+    case HTTP::Accept::Language.best_locale(["en", "fr"], wanted_languages)
+    when "fr"
+      I18n.locale = "fr"
+    else
+      I18n.locale = "en"
+    end
+    render "src/language-chooser.ecr"
   end
 end
 
