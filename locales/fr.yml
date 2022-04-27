@@ -61,6 +61,7 @@ body:
   my-skills: "Mes compétences"
   skills:
     linux: "Administration Linux"
+    network: "Administration réseau (Cisco)"
   
   contact-me: "Me contacter"
   contact:
@@ -71,6 +72,7 @@ other:
   years: "années"
   years-school: "années (école)"
   year: "année"
+  year-school: "année (école)"
 
 site:
   title: "Nicolas Martinussen - Etudiant en Informatique et Développeur Web"

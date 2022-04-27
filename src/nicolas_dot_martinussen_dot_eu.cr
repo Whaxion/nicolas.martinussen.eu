@@ -32,7 +32,6 @@ module Nicolas::Martinussen::EU
     if env.request.headers["Accept-Language"]?
       wanted_languages = HTTP::Accept::Language.parse(env.request.headers["Accept-Language"])
     end
-    puts wanted_languages.inspect
     case HTTP::Accept::Language.best_locale(["en", "fr"], wanted_languages)
     when "fr"
       env.redirect "/fr"
@@ -66,6 +65,23 @@ module Nicolas::Martinussen::EU
       I18n.locale = "en"
     end
     render "src/language-chooser.ecr"
+  end
+
+  HORAIRE_REGEX = /(SUMMARY:(.+)?)(INF.+-[0-9]+-[0-9]+)/
+  get "/horaire" do |env|
+    response = HTTP::Client.get "https://horaire-hepl.provincedeliege.be/myical.php?groupe=INFS3_326"
+    if response.status != HTTP::Status::OK
+      halt env, status_code: 404
+    end
+    env.response.content_type = "text/calendar"
+    response.body.gsub(HORAIRE_REGEX){ |s|
+      md = s.match(HORAIRE_REGEX)
+      if md != nil && md.as(Regex::MatchData)[1]? != nil
+        s = md.as(Regex::MatchData)[1]
+      end
+      
+      s
+    }
   end
 end
 
