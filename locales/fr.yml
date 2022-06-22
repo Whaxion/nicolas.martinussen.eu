@@ -2,7 +2,7 @@ top:
   language: "Langue"
   hello: "Bonjour, je suis Nicolas Martinussen."
   im-a: "Je suis un "
-  im-a-1: "étudiant en informatique."
+  im-a-1: "administrateur systèmes/réseaux."
   im-a-2: "développeur web."
   know-more: "En savoir plus sur moi"
 body:
@@ -75,8 +75,8 @@ other:
   year-school: "année (école)"
 
 site:
-  title: "Nicolas Martinussen - Etudiant en Informatique et Développeur Web"
-  description: "Bonjour, je suis Nicolas Martinussen. Je suis un étudiant en Informatique et un Développeur Web. Et ceci est mon Curriculum Vitae."
+  title: "Nicolas Martinussen - Administrateur Systèmes/Réseaux et Développeur Web"
+  description: "Bonjour, je suis Nicolas Martinussen. Je suis un administrateur Systèmes/Réseaux et un Développeur Web. Et ceci est mon Curriculum Vitae."
   image: "https://nicolas.martinussen.eu/img/screenshot-fr.png"
   language-chooser:
     title: "Nicolas Martinussen - Choisissez votre langue"

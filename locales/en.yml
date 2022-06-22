@@ -2,7 +2,7 @@ top:
   language: "Language"
   hello: "Hello, I'm Nicolas Martinussen."
   im-a: "I'm a "
-  im-a-1: "student in computer science."
+  im-a-1: "system/network administrator."
   im-a-2: "web developer."
   know-more: "Find out more about me"
 body:
@@ -75,8 +75,8 @@ other:
   year-school: "year (school)"
 
 site:
-  title: "Nicolas Martinussen - Student in Computer Science and Web Developer"
-  description: "Hello, I'm Nicolas Martinussen. I'm a Student in Computer Science and a Web Developer. And this is my Curriculum Vitae."
+  title: "Nicolas Martinussen - System/Network Administrator and Web Developer"
+  description: "Hello, I'm Nicolas Martinussen. I'm a System/Network Administrator and a Web Developer. And this is my Curriculum Vitae."
   image: "https://nicolas.martinussen.eu/img/screenshot-en.png"
   language-chooser:
     title: "Nicolas Martinussen - Choose your language"
