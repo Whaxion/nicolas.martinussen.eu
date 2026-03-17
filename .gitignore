@@ -1,10 +1,1 @@
-/docs/
-/lib/
-/bin/
-/.shards/
-*.dwarf
-.sass-cache/
-/public/css
-/public/js
-/public/sitemap.xml
-server
+public

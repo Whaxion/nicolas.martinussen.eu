@@ -1,0 +1,55 @@
+[cursus]
+
+[cursus.1]
+left_title = "HEPL Seraing"
+left_subtitle = "(INPRES)"
+left_year = "2019 - 2022"
+right_title = "Computer science and systems"
+right_subtitle = "Network and Telecom"
+
+[cursus.2]
+left_title = "Athénée Royal"
+left_subtitle = "de Visé"
+left_year = "2014 - 2019"
+right_title = "General education"
+right_subtitle = "Sciences 7, Mathematics 8"
+right_text = ["Laureate of the 2018 Chemistry Olympiad", "Laureate of the 2019 Chemistry Olympiad"]
+
+[cursus.3]
+left_title = "Collège St-Hadelin"
+left_subtitle = "Visé"
+left_year = "2012 - 2014"
+right_title = "General education"
+right_subtitle = "Latin, Dutch"
+
+[pro]
+
+[pro.1]
+left_title = "Joskin"
+left_subtitle = "Soumagne"
+left_year = "2022 - Today"
+right_title = "System and Network Administrator"
+right_subtitle = ""
+
+[pro.2]
+left_title = "Le 1930"
+left_subtitle = "Visé"
+left_year = "2017 - 2022"
+right_title = "Student Job"
+right_subtitle = "Cooking, Dishwashing"
+
+[pro.3]
+left_title = "Mineskill.fr"
+left_subtitle = "Lille"
+left_year = "18-19 mai 2019"
+right_title = "Geek-Days Lille 2019"
+right_subtitle = "Animation of a 60m² surface"
+right_text = ["Management of the surface and its animations", "Contact with the public", "Sales point management", "Minecraft mini-game development"]
+
+[pro.4]
+left_title = "Mineskill.fr"
+left_subtitle = "Lille"
+left_year = "26-27 mai 2018"
+right_title = "Geek-Days Lille 2018"
+right_subtitle = "Animation of a 36m² surface"
+right_text = ["Supervision of animations", "Visitor flow management", "Tasks related to the proper maintenance of the surface (preparations, setups)", "Minecraft mini-game development"]

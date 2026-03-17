@@ -1,0 +1,36 @@
+# The URL the site will be built for
+base_url = "https://nicolas.martinussen.eu"
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = true
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = false
+
+[markdown]
+
+[markdown.highlighting]
+theme = "catppuccin-mocha"
+
+[extra]
+# Put all your custom variables here
+
+[languages.fr.translations]
+site_title = "Nicolas Martinussen - Administrateur Systèmes/Réseaux et Développeur Web"
+site_description = "Bonjour, je suis Nicolas Martinussen. Je suis un administrateur Systèmes/Réseaux et un Développeur Web. Et ceci est mon Curriculum Vitae."
+site_image = "/img/screenshot-fr.png"
+site_language-chooser_title = "Nicolas Martinussen - Choisissez votre langue"
+site_language-chooser_description = "Bonjour, je suis Nicolas Martinussen. Et ceci est la page où vous choisissez votre langue."
+top_im-a = "Je suis un "
+top_im-a-1 = "administrateur systèmes/réseaux."
+top_im-a-2 = "développeur web."
+
+[languages.en.translations]
+site_title = "Nicolas Martinussen - System/Network Administrator and Web Developer"
+site_description = "Hello, I'm Nicolas Martinussen. I'm a System/Network Administrator and a Web Developer. And this is my Curriculum Vitae."
+site_image = "/img/screenshot-en.png"
+site_language-chooser_title = "Nicolas Martinussen - Choose your language"
+site_language-chooser_description = "Hello, I'm Nicolas Martinussen. And this, is the page where you choose your language"
+top_im-a = "I'm a "
+top_im-a-1 = "system/network administrator."
+top_im-a-2 = "web developer."

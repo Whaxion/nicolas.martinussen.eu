@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="{{ lang }}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="{{ get_url(path="style.css") }}" integrity="sha384-{{ get_hash(path="style.css", sha_type=384, base64=true) | safe }}">
+
+    <title>{{ trans(key="site_title", lang=lang) }}</title>
+
+    <meta name="description" content="{{ trans(key="site_description", lang=lang) }}">
+    <meta name=”robots” content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nicolas.martinussen.eu/">
+    <meta property="og:title" content="{{ trans(key="site_title", lang=lang) }}">
+    <meta property="og:description" content="{{ trans(key="site_description", lang=lang) }}">
+    <meta property="og:image" content="{{ trans(key="site_image", lang=lang) }}">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://nicolas.martinussen.eu/">
+    <meta property="twitter:title" content="{{ trans(key="site_title", lang=lang) }}">
+    <meta property="twitter:description" content="{{ trans(key="site_description", lang=lang) }}">
+    <meta property="twitter:image" content="{{ trans(key="site_image", lang=lang) }}">
+</head>
+<body>
+<div id="top">
+    {% if lang == 'en' %}
+    <a href="/fr" id="current-language" class="button">
+        <span class="flag-icon flag-icon-fr"></span>
+        <span>Français</span>
+    </a>
+    {% elif lang == 'fr' %}
+    <a href="/" id="current-language" class="button">
+        <span class="flag-icon flag-icon-gb"></span>
+        <span>English</span>
+    </a>
+    {% endif %}
+    <div class="middle-text">
+        {% if lang == 'en' %}
+        <h1>Hello, I'm Nicolas Martinussen.</h1>
+        {% elif lang == 'fr' %}
+        <h1>Bonjour, je suis Nicolas Martinussen.</h1>
+        {% endif %}
+        <p>{{ trans(key="top_im-a", lang=lang) }} <span id="text-writing">{{ trans(key="top_im-a-1", lang=lang) }}</span></p>
+    </div>
+    <div class="bottom-text">
+        {% if lang == 'en' %}
+        <p>Find out more about me</p>
+        {% elif lang == 'fr' %}
+        <p>En savoir plus sur moi</p>
+        {% endif %}
+        <span class="icon-chevron-down"></span>
+    </div>
+</div>
+<div id="body">
+    {% set data = load_data(path="content/data." ~ lang ~".toml") %}
+
+    <h2 id="cursus">
+        {% if lang == 'en' %}
+        <p>My school curriculum</p>
+        {% elif lang == 'fr' %}
+        <p>Mon cursus scolaire</p>
+        {% endif %}
+    </h2>
+
+    <div class="timeline">
+        {% for _,c in data["cursus"] %}
+        <div class="line">
+            <div class="left">
+                <p class="title">{{ c["left_title"] }}</p>
+                <p class="subtitle">{{ c["left_subtitle"] }}</p>
+                <p class="year">{{ c["left_year"] }}</p>
+            </div>
+            <div class="right">
+                <p class="title">{{ c["right_title"] }}</p>
+                <p class="subtitle">{{ c["right_subtitle"] }}</p>
+                {% if c["right_text"] %}
+                <ul class="text">
+                    {% for text in c["right_text"] %}
+                    <li>{{ text }}</li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+    <h2 id="experience">
+        {% if lang == 'en' %}
+        <p>My professional experiences</p>
+        {% elif lang == 'fr' %}
+        <p>Mes expériences professionnelles</p>
+        {% endif %}
+    </h2>
+    <div class="timeline">
+        {% for _,c in data["pro"] %}
+        <div class="line">
+            <div class="left">
+                <p class="title">{{ c["left_title"] }}</p>
+                <p class="subtitle">{{ c["left_subtitle"] }}</p>
+                <p class="year">{{ c["left_year"] }}</p>
+            </div>
+            <div class="right">
+                <p class="title">{{ c["right_title"] }}</p>
+                <p class="subtitle">{{ c["right_subtitle"] }}</p>
+                {% if c["right_text"] %}
+                <ul class="text">
+                    {% for text in c["right_text"] %}
+                    <li>{{ text }}</li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+    <h2 id="contact">
+        {% if lang == 'en' %}
+        <p>Contact me</p>
+        {% elif lang == 'fr' %}
+        <p>Me contacter</p>
+        {% endif %}
+    </h2>
+    <p class="text-center"><b>
+        {% if lang == 'en' %}
+        By mail:
+        {% elif lang == 'fr' %}
+        Par mail:
+        {% endif %}
+    </b> <a href="mailto:cv@martinussen.eu">cv@martinussen.eu</a></p>
+    <p class="text-center"><b>GitHub:</b> <a href="https://github.com/Whaxion" target="_blank">Whaxion</a></p>
+</div>
+<script type="application/javascript">
+    let texts = [
+        "{{ trans(key="top_im-a-1", lang=lang) | safe }}",
+        "{{ trans(key="top_im-a-2", lang=lang) | safe  }}"
+    ];
+
+    let timeBeforeWriting = -1;
+</script>
+<script type="application/javascript" src="{{ get_url(path="js/main.js") }}" integrity="sha384-{{ get_hash(path="js/main.js", sha_type=384, base64=true) | safe }}"></script>
+</body>
+</html>

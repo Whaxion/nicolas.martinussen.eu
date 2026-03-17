@@ -1,0 +1,55 @@
+[cursus]
+
+[cursus.1]
+left_title = "HEPL Seraing"
+left_subtitle = "(INPRES)"
+left_year = "2019 - 2022"
+right_title = "Informatique et systèmes"
+right_subtitle = "Orientation Réseau et Télécom"
+
+[cursus.2]
+left_title = "Athénée Royal"
+left_subtitle = "de Visé"
+left_year = "2014 - 2019"
+right_title = "Enseignement général"
+right_subtitle = "Sciences 7, Mathématiques 8"
+right_text = ["Lauréat des olympiades de chimie en 2018", "Lauréat des olympiades de chimie en 2019"]
+
+[cursus.3]
+left_title = "Collège St-Hadelin"
+left_subtitle = "Visé"
+left_year = "2012 - 2014"
+right_title = "Enseignement général"
+right_subtitle = "Latin, Néérlandais"
+
+[pro]
+
+[pro.1]
+left_title = "Joskin"
+left_subtitle = "Soumagne"
+left_year = "2022 - Aujourd'hui"
+right_title = "Administrateur système et réseau"
+right_subtitle = ""
+
+[pro.2]
+left_title = "Le 1930"
+left_subtitle = "Visé"
+left_year = "2017 - 2022"
+right_title = "Job étudiant"
+right_subtitle = "Cuisine, Plonge"
+
+[pro.3]
+left_title = "Mineskill.fr"
+left_subtitle = "Lille"
+left_year = "18-19 mai 2019"
+right_title = "Geek-Days Lille 2019"
+right_subtitle = "Animation d'une surface de 60m²"
+right_text = ["Gestion de la surface et de ses animations", "Contact avec le grand public", "Gestion d'un point de vente", "Développement d'un mini-jeu sur Minecraft"]
+
+[pro.4]
+left_title = "Mineskill.fr"
+left_subtitle = "Lille"
+left_year = "26-27 mai 2018"
+right_title = "Geek-Days Lille 2018"
+right_subtitle = "Animation d'une surface de 36m²"
+right_text = ["Supervision des animations", "Gestion du flux de visiteurs", "Tâches liées au bon maintien de la surface (préparations, mises en place)", "Développement d'un mini-jeu sur Minecraft"]
